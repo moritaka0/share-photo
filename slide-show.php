@@ -64,7 +64,16 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
+<script>
+function doReloadNoCache() {
+ // キャッシュを無視してサーバーからリロード
+ window.location.reload(true);
+}
 
+window.addEventListener('load', function () {
+ setTimeout(doReloadNoCache, 10000);
+});
+</script>
 
 </body>
 
