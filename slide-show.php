@@ -12,17 +12,17 @@
 
 </head>
 
-<body style="padding-top:5rem">
+<body class="bg-light" style="padding-top:5rem">
 
 <nav class="navbar navbar-expand navbar-dark fixed-top" style="background-color:#FFB6C1;">
   <a href= "#" class="navbar-brand">Photo Share for Hassy&Mai</a>
 </nav>
 <!-- ここにページ内容を記述 -->
-<div class="container" style="background-color:#EEFFFF;">        <!-- 全体を囲むコンテナ -->
+<div class="container">        <!-- 全体を囲むコンテナ -->
 
   <div class="carousel slide carousel-fade" id="c1" data-ride="carousel">    
     <!-- カルーセル内の画像 -->
-    <div class="carousel-inner border border-secondary">
+    <div class="carousel-inner">
     <?php
         $i = 0; 
         foreach (glob('tmp/*') as $file) :
