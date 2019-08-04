@@ -28,7 +28,7 @@
         foreach (glob('tmp/*') as $file) :
     ?>
       <div class="carousel-item <?php if($i==0){echo 'active';}?>" style="height: 730px;" data-interval="1000">
-        <img src="<?php echo $file; ?>" class="mx-auto d-block  mh-100 img-fluid">
+        <img src="<?php echo $file; ?>" class="m-auto d-block  mh-100 img-fluid">
       </div>
     <?php
         $i++;
