@@ -13,7 +13,7 @@
   <style type="text/css">
     .carousel-item {
       width:auto;
-      height:50%;
+      height:40%;
       text-align: center;
     }
   </style>
@@ -43,7 +43,7 @@
         foreach (glob('tmp/*') as $file) :
     ?>
       <div class="carousel-item <?php if($i==0){echo 'active';}?>" data-interval="1000">
-        <img src="<?php echo $file; ?>" class="d-block img-fluid">
+        <img src="<?php echo $file; ?>" class="d-block">
       </div>
     <?php
         $i++;
