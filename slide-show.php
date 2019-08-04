@@ -16,7 +16,7 @@
 <!-- ここにページ内容を記述 -->
 <div class="container">        <!-- 全体を囲むコンテナ -->
 
-  <h1><?php echo 'スライドショーテスト'; ?></>
+  <h1><?php echo 'スライドテスト'; ?></>
 
   <div class="carousel slide carousel-fade" id="c1" data-ride="carousel">    
     <!-- カルーセルの下に表示するインディケーター -->
