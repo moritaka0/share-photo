@@ -13,7 +13,7 @@
   <style type="text/css">
     .carousel-item {
       width:auto;
-      height:70%;
+      height:50%;
       text-align: center;
     }
   </style>
