@@ -30,15 +30,10 @@
     </ol>
     -->
     <!-- カルーセル内の画像 -->
-    <p>
-    <?php
-    foreach(glob('tmp/*') as $file){
-        if(is_file($file)){
-            echo htmlspecialchars($file);
-        }
-    }
-    ?>
-    </p>
+    <?php foreach (glob('tmp/*') as $file) : ?>
+    <p><?php echo $file; ?></p>
+    <?php endforeach; ?>
+ 
     <!--
     <div class="carousel-inner">
       <div class="carousel-item active"><img src="img/photo1.jpg" class="d-block w-100"></div>
