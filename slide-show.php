@@ -9,15 +9,27 @@
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
   <title>はっしーまい結婚式</title>
-  
+
   <style type="text/css">
-      .carousel .item {
-      height: 100%;
+    .carousel-item .img-fluid {
+      width:100%;
+      height:auto;
+      min-height: 400px;
+      object-fit: cover;
     }
 
-    .carousel img {
-      position: absolute;
-      width: 100%;
+    .carousel-item{
+      height: 400px;
+    }
+
+    .carousel-item a {
+      display: block;
+      width:100%;
+    }
+
+    .carousel-item .show-image {
+      display: block;
+      width:100%;
     }
   </style>
 </head>
@@ -46,7 +58,7 @@
         foreach (glob('tmp/*') as $file) :
     ?>
       <div class="carousel-item <?php if($i==0){echo 'active';}?>" data-interval="1000">
-        <img src="<?php echo $file; ?>" class="d-block w-100">
+        <img src="<?php echo $file; ?>" class="d-block img-fluid">
       </div>
     <?php
         $i++;
