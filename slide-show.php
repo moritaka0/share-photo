@@ -71,7 +71,7 @@ function doReloadNoCache() {
 }
 
 window.addEventListener('load', function () {
- setTimeout(doReloadNoCache, 10000);
+ setTimeout(doReloadNoCache, 40000);
 });
 </script>
 
