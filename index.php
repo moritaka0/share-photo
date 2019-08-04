@@ -9,7 +9,7 @@ $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient(getenv('CHANNEL_ACCESS
 $bot = new \LINE\LINEBot($httpClient,['channelSecret' => getenv('CHANNEL_SECRET')]);
 
 //LINE APIがリクエストに付与した署名を取得
-$signature = $_SERVER['HTTP_' . \LINE\LineBot\Constant\HTTPHeader::LINE_SIGNATURE];
+$signature = $_SERVER['HTTP_' . \LINE\LINEBot\Constant\HTTPHeader::LINE_SIGNATURE];
 
 //署名が正当かチェックし問題なければリクエストをパースして配列格納
 $events = $bot->parseEventRequest(file_get_contents('php://input'),$signature);
