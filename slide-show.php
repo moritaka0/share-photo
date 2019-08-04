@@ -12,23 +12,15 @@
 
 </head>
 
-<body>
+<body style="padding-top:5rem">
 
 <!-- ここにページ内容を記述 -->
 <div class="container">        <!-- 全体を囲むコンテナ -->
 
-  <h1><?php echo 'スライドテスト'; ?></>
-
+<nav class="navbar navbar-expand navbar-dark" style="background-color:#FFB6C1;>
+  <a href="#" class="navbar-brand">Photo Share for Hassy&Mai</a>
+</nav>
   <div class="carousel slide carousel-fade" id="c1" data-ride="carousel">    
-    <!-- カルーセルの下に表示するインディケーター -->
-    <!--
-    <ol class="carousel-indicators"> 
-      <li data-target="#c1" data-slide-to="0" class="active"></li>
-      <li data-target="#c1" data-slide-to="1"></li>
-      <li data-target="#c1" data-slide-to="2"></li>
-      <li data-target="#c1" data-slide-to="3"></li>
-    </ol>
-    -->
     <!-- カルーセル内の画像 -->
     <div class="carousel-inner">
     <?php
