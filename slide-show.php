@@ -18,17 +18,17 @@
   <a href= "#" class="navbar-brand">Photo Share for Hassy&Mai</a>
 </nav>
 <!-- ここにページ内容を記述 -->
-<div class="container">        <!-- 全体を囲むコンテナ -->
+<div class="container" style="background-color:#EEFFFF;">        <!-- 全体を囲むコンテナ -->
 
   <div class="carousel slide carousel-fade" id="c1" data-ride="carousel">    
     <!-- カルーセル内の画像 -->
-    <div class="carousel-inner">
+    <div class="carousel-inner border border-secondary">
     <?php
         $i = 0; 
         foreach (glob('tmp/*') as $file) :
     ?>
       <div class="carousel-item <?php if($i==0){echo 'active';}?>" style="height: 730px;" data-interval="1000">
-        <img src="<?php echo $file; ?>" class="p-auto d-block  mh-100 img-fluid">
+        <img src="<?php echo $file; ?>" class="m-auto d-block  mh-100 img-fluid">
       </div>
     <?php
         $i++;
