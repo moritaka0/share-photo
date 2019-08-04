@@ -10,13 +10,6 @@
         crossorigin="anonymous">
   <title>はっしーまい結婚式</title>
 
-  <style type="text/css">
-    .carousel-item {
-      width:auto;
-      height:40%;
-      text-align: center;
-    }
-  </style>
 </head>
 
 <body>
@@ -42,8 +35,8 @@
         $i = 0; 
         foreach (glob('tmp/*') as $file) :
     ?>
-      <div class="carousel-item <?php if($i==0){echo 'active';}?>" data-interval="1000">
-        <img src="<?php echo $file; ?>" class="d-block">
+      <div class="carousel-item <?php if($i==0){echo 'active';}?>" style="height: 650px;" data-interval="1000">
+        <img src="<?php echo $file; ?>" class="d-block img-fluid h-100">
       </div>
     <?php
         $i++;
