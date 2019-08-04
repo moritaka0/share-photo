@@ -43,7 +43,29 @@
     ?>
 
     <!-- カルーセル内の画像 -->
+    <div class="carousel-inner">
+    <?php
+        $i = 0; 
+        foreach (glob('tmp/*') as $file) :
+    ?>
+      <div class="carousel-item <?php if($i==0){echo 'active';}?>">
+        <img src="<?php echo $file; ?>" class="d-block w-100">
+      </div>
+    <?php
+        $i++;
+        endforeach; 
+    ?>
+    </div>
 
+    <a href="#c1" class="carousel-control-prev" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="sr-only">前の画像へ</span>
+    </a>
+    <a href="#c1" class="carousel-control-next" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="sr-only">次の画像へ</span>
+    </a>
+  </div>
 
 </div>        <!-- 全体を囲むコンテナ -->
 
