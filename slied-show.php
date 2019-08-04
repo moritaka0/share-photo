@@ -18,8 +18,7 @@
 
   <h1><?php echo 'スライドショーテスト'; ?></>
 
-  <div class="carousel slide" id="c1" data-ride="carousel">
-    
+  <div class="carousel slide" id="c1" data-ride="carousel">    
     <!-- カルーセルの下に表示するインディケーター -->
     <!--
     <ol class="carousel-indicators"> 
@@ -29,19 +28,6 @@
       <li data-target="#c1" data-slide-to="3"></li>
     </ol>
     -->
-
-    <?php
-        $i = 0;
-        foreach (glob('tmp/*') as $file) : 
-        
-    ?>
-    <p><?php echo $file; ?></p>
-    <p><?php echo $i; ?></p>
-    <?php
-        $i++; 
-        endforeach; 
-    ?>
-
     <!-- カルーセル内の画像 -->
     <div class="carousel-inner">
     <?php
@@ -56,7 +42,6 @@
         endforeach; 
     ?>
     </div>
-
     <a href="#c1" class="carousel-control-prev" data-slide="prev">
       <span class="carousel-control-prev-icon"></span>
       <span class="sr-only">前の画像へ</span>
@@ -66,7 +51,6 @@
       <span class="sr-only">次の画像へ</span>
     </a>
   </div>
-
 </div>        <!-- 全体を囲むコンテナ -->
 
 
