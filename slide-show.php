@@ -14,7 +14,7 @@
 
 <body style="padding-top:5rem">
 
-<nav class="navbar navbar-expand navbar-dark" style="background-color:#FFB6C1;">
+<nav class="navbar navbar-expand navbar-dark fixed-top" style="background-color:#FFB6C1;">
   <a href= "#" class="navbar-brand">Photo Share for Hassy&Mai</a>
 </nav>
 <!-- ここにページ内容を記述 -->
