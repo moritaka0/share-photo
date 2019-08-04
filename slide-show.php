@@ -9,14 +9,28 @@
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
   <title>はっしーまい結婚式</title>
-
+  <style type="text/css">  
+    body {
+    /* 画像指定、imagesというフォルダ(ＣＳＳと同じ位置に作ったフォルダ)に入っている*/
+    background-image: url(image/bgimage.jpg);  
+    /* 画像を常に上下左右の中央に配置させる */
+    background-position: center center; 
+    /* 画像を繰り返し表示しない */
+    background-repeat: no-repeat;  
+    /* ページなどのコンテンツの高さが画像の高さより大きい時動に固定する */
+    background-attachment: fixed; 
+    /* 画面、ブラウザのサイズに基づいて、背景画像を調整 */
+    background-size: cover;   
+    }
+  </style>  
 </head>
 
 <body class="bg-light" style="padding-top:5rem">
-
 <nav class="navbar navbar-expand navbar-dark fixed-top" style="background-color:#FFB6C1;">
   <a href= "#" class="navbar-brand">Photo Share for Hassy&Mai</a>
 </nav>
+<div class="full-img"></div>
+
 <!-- ここにページ内容を記述 -->
 <div class="container">        <!-- 全体を囲むコンテナ -->
 
