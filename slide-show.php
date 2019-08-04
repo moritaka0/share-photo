@@ -14,12 +14,12 @@
 
 <body style="padding-top:5rem">
 
+<nav class="navbar navbar-expand navbar-dark" style="background-color:#FFB6C1;">
+  <a href= "#" class="navbar-brand">Photo Share for Hassy&Mai</a>
+</nav>
 <!-- ここにページ内容を記述 -->
 <div class="container">        <!-- 全体を囲むコンテナ -->
 
-<nav class="navbar navbar-expand navbar-dark" style="background-color:#FFB6C1;>
-  <a href="#" class="navbar-brand">Photo Share for Hassy&Mai</a>
-</nav>
   <div class="carousel slide carousel-fade" id="c1" data-ride="carousel">    
     <!-- カルーセル内の画像 -->
     <div class="carousel-inner">
@@ -35,14 +35,6 @@
         endforeach; 
     ?>
     </div>
-    <a href="#c1" class="carousel-control-prev" data-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-      <span class="sr-only">前の画像へ</span>
-    </a>
-    <a href="#c1" class="carousel-control-next" data-slide="next">
-      <span class="carousel-control-next-icon"></span>
-      <span class="sr-only">次の画像へ</span>
-    </a>
   </div>
 </div>        <!-- 全体を囲むコンテナ -->
 
