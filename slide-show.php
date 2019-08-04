@@ -34,7 +34,7 @@
         $i = 0; 
         foreach (glob('tmp/*') as $file) :
     ?>
-      <div class="carousel-item <?php if($i==0){echo 'active';}?>" data-interval="2000">
+      <div class="carousel-item <?php if($i==0){echo 'active';}?>" data-interval="1000">
         <img src="<?php echo $file; ?>" class="d-block w-100">
       </div>
     <?php
@@ -64,6 +64,12 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
+
+<script>
+setTimeout(function () {
+    location.reload();
+}, 5000);
+</script>
 </body>
 
 </html>
