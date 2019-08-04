@@ -9,6 +9,17 @@
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
   <title>はっしーまい結婚式</title>
+  
+  <style type="text/css">
+      .carousel .item {
+      height: 100%;
+    }
+
+    .carousel img {
+      position: absolute;
+      width: 100%;
+    }
+  </style>
 </head>
 
 <body>
