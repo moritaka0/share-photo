@@ -53,7 +53,7 @@ function replyTextMessage($bot, $replyToken, $text){
     //返信とレスポンスを取得
     $response = $bot->replyMessage($replyToken, new \LINE\LINEBot\MessageBuilder\TextMessageBuilder($text));
     //レスポンスが異常な場合
-    if($response->isSucceeded()){
+    if(!$response->isSucceeded()){
         error_log('Failed!' . $response->getHTTPStatus . ' ' . $response->getRawBody());
     }
 
