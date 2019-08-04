@@ -29,29 +29,21 @@
       <li data-target="#c1" data-slide-to="3"></li>
     </ol>
     -->
-    <!-- カルーセル内の画像 -->
-    <?php foreach (glob('tmp/*') as $file) : ?>
-    <p><?php echo $file; ?></p>
-    <?php endforeach; ?>
- 
-    <!--
-    <div class="carousel-inner">
-      <div class="carousel-item active"><img src="img/photo1.jpg" class="d-block w-100"></div>
-      <div class="carousel-item"><img src="img/photo2.jpg" class="d-block w-100"></div>
-      <div class="carousel-item"><img src="img/photo3.jpg" class="d-block w-100"></div>
-      <div class="carousel-item"><img src="img/photo4.jpg" class="d-block w-100"></div>
-    </div>
 
-    <a href="#c1" class="carousel-control-prev" data-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-      <span class="sr-only">前の画像へ</span>
-    </a>
-    <a href="#c1" class="carousel-control-next" data-slide="next">
-      <span class="carousel-control-next-icon"></span>
-      <span class="sr-only">次の画像へ</span>
-    </a>
-  </div>
-  -->
+    <?php
+        $i = 0;
+        foreach (glob('tmp/*') as $file) : 
+        
+    ?>
+    <p><?php echo $file; ?></p>
+    <p><?php echo $i; ?></p>
+    <?php
+        $i++; 
+        endforeach; 
+    ?>
+
+    <!-- カルーセル内の画像 -->
+
 
 </div>        <!-- 全体を囲むコンテナ -->
 
