@@ -11,25 +11,10 @@
   <title>はっしーまい結婚式</title>
 
   <style type="text/css">
-    .carousel-item .img-fluid {
-      width:100%;
-      height:auto;
-      min-height: 400px;
+    .carousel-item {
+      width:auto;
+      height:100%;
       object-fit: cover;
-    }
-
-    .carousel-item{
-      height: 1023px;
-    }
-
-    .carousel-item a {
-      display: block;
-      width:100%;
-    }
-
-    .carousel-item .show-image {
-      display: block;
-      width:100%;
     }
   </style>
 </head>
