@@ -19,7 +19,7 @@
     }
 
     .carousel-item{
-      height: 400px;
+      height: 1023px;
     }
 
     .carousel-item a {
